@@ -13,7 +13,7 @@ def binarySearch(a, b):
     da = 0
     bk = len(a) - 1
     while not s and da <= bk:
-        cari = da + (bk - da) // 2  # 0 + (8 - 0) // 2 = 4
+        cari = da + (bk - da) // 2
         sl(1)
         print(
             f'[Proses] Posisi Pencarian di index {cari} dengan nilai {a[cari]}')
@@ -30,7 +30,7 @@ def binarySearch(a, b):
 
 
 a = [34, 53, 26, 67, 2, 24, 1, 6, 4, 5, 6, 7, 8,
-     9, 10, 11, 12, 13, 14, 15]  # 7 index, 8 elemen
+     9, 10, 11, 12, 13, 14, 15]
 print(f'Data Sebelum BSorting {a}')
 bsort(a)
 cari = 260
