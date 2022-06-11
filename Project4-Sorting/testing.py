@@ -1,6 +1,4 @@
-# solbar cicak
-
-
+# ngosol (ngoding solo)
 def bsort(data_):
     # sorting method = bubble sort
     for n in range(len(data_) - 1, 0, -1):
