@@ -10,7 +10,7 @@ def insertionSort(arr):
         arr[j+1] = key  # ganti arr[j+1] (value : 0) menjadi key (value: 11)
 
 
-9.  # Data olahan
+# Data olahan
 arr = [12, 11, 13, 5, 6]
 print(arr)
 insertionSort(arr)
