@@ -1,10 +1,10 @@
 def bsort(a):
     for i in range(len(a) - 1, 0, -1):
-        #print(i, '\n')
+        # print(i, '\n')
         for n in range(i):
             if a[n] > a[n + 1]:
                 a[n], a[n + 1] = a[n + 1], a[n]
-                #a[n + 1] = a[n]
+                # a[n + 1] = a[n]
 
 
 def gnum(longnum):
@@ -14,28 +14,32 @@ def gnum(longnum):
 
 def binarySearch(a, cari):
     from time import sleep as sl
-    ba, bak, s = 0, len(a) - 1, False
-    while not s and ba < bak:
-        psi = ba + (bak - ba) // 2  # 4 = 12,(5)
-        # 5 (7 - 5) // 2  = 6
-        # 6 (7 - 5) // 2 = 7
-        print(f'Mencari nilai {cari} di index {psi} | Tidak di temukan')
+    ba, bak = 0, len(a) - 1
+    s = False
+    # while not s and ba <= bak:
+    while ba <= bak and not s:
+        # while ba <= bak and not s:
+        psi = (ba + bak) // 2
+        print(f'[PROSES]Mencari nilai {cari} di index {psi}')
         sl(0.5)
         if a[psi] == cari:
             s = True
-        elif a[psi] > cari:
+        elif cari < a[psi]:
             bak = psi - 1
         else:
             ba = psi + 1
     if s == True:
-        print(f'[SUKSES] Data ditemukan! berada di index {psi}')
+        print(f'\n[SUKSES] Data ditemukan! berada di index {psi}')
+    else:
+        print(f'\n[GAGAL] Nilai {cari} tidak ditemukan')
 
 
-a = [23, -1, 0, 4, 27, 30, 12, 45, 9]
-print(f'Data sebelum di sortint : {a}\n')
-cari = 30
+a = [20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+print(f'Data sebelum di sorting : {a}')
+cari = 17
 bsort(a)
-print(f'\nData sesudah di sorint : {a}')
+print(
+    f'Data sesudah di sorting : {a}\nJumlah elemen : {len(a)}\nJumlah Index {len(a)-1}\n')
 binarySearch(a, cari)
 
-# gnum(100)
+# gnum(1000)
