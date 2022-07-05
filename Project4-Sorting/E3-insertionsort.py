@@ -1,8 +1,13 @@
+from os import system as sy
+sy('cls')
+
+
 def insertionSort(arr):
-    for i in range(1, len(arr)):  # menghasilkan 4 putaran
-        key = arr[i]  # value : a (untuk putara 1)
-        j = i-1  # value : 0 (putaran)
-        while j >= 0 and key < arr[j]:
+    for i in range(1, len(arr)):  # menghasilkan 5 putaran
+        print(i)
+        key = arr[i]  # value : a (untuk putara 1), c = 2, 3
+        j = i-1  # value : 0 (putaran), b = 1
+        while j >= 0 and key < arr[j]:  # c < b
             # jika nilai j( value : 0) lebih atau sama dengan 0 dan key( value : a) lebih kecil dari arr[j](value : b), dan jika hasil nya true lanjutkan
             # ganti arr[j+1](value : a) menjadi arr[j](value : b)
             arr[j+1] = arr[j]

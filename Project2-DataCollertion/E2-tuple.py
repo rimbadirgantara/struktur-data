@@ -1,6 +1,4 @@
-from os import system as sy
-sy('cls')
-nama = ('Rimba', 'Rima', 'Aryanto', 'Payos', 'Edy')
+nama = ('rik', 'zero', 'taiga', 'regulos', 'jeka')
 
 print('A. Menampilkan semua nilai lemen tuple dengan perintah loop for, for dengan kombinasi range dan len, while')
 print('Dengan For')
@@ -23,19 +21,19 @@ print(f'Range 2: : {nama[2:]}')
 
 print('\nC. Mengubah nilai tuple sebanyak 2 elemen')
 namaa = list(nama)
-namaa[2] = 'Elisa'
-namaa[3] = 'Sania'
+namaa[2] = 'renika'
+namaa[3] = 'setyo'
 print(tuple(namaa))
 
 print('\nD. Penambahan elemen pada tuple')
 print('Dengan Append')
-namaa.append('Febiola')
+namaa.append('khabib')
 print(namaa)
-namaa += ('Livy', 'joyce')
+namaa += ('juliana', 'amat')
 print(tuple(namaa))
 
 print('\nE. Penghapusan elemen tuple dengan perintah remove')
-namaa.remove('Edy')
+namaa.remove('rik')
 print(tuple(namaa))
 
 print('\nF. Unpack tuple dengan asterik(*)')
@@ -51,10 +49,10 @@ new_nama = list(nama) * 2
 print(new_nama)
 
 print('\nH. Perhitungan kuantiti')
-print(f"Jumlah Rima : {namaa.count('Rima')}")
-print(f"Jumlah Elisa : {namaa.count('Elisa')}")
+print(f"Jumlah juliana : {namaa.count('juliana')}")
+print(f"Jumlah amat : {namaa.count('amat')}")
 
 print('\nI. Pencarian nilai tertentu')
-print(f"{namaa}\nRima berada di index {namaa.index('Rima')}")
-print(f"Elisa berada di index {namaa.index('Elisa')}")
-print(f"Livy berada di index {namaa.index('Livy')}")
+print(f"{namaa}\njulianaberada di index {namaa.index('juliana')}")
+print(f"amat berada di index {namaa.index('amat')}")
+print(f"khabib berada di index {namaa.index('khabib')}")

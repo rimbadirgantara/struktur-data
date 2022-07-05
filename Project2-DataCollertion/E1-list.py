@@ -1,8 +1,4 @@
-# lib untuk membersihkan layar
-from os import system as sy
-sy('cls')
-
-nama = ['rimba', 'yanto', 'payos', 'sarep', 'roosvelt']
+nama = ['rik', 'zero', 'taiga', 'regulos', 'jeka']
 
 print('a. Menampilkan semua nilai elemen list dengan perintah loop for dan loop while')
 print('- for')
@@ -17,21 +13,21 @@ print('\nb. Menampilkan nilai list dengan range 1:4, range :3')
 print(f'list nama -> {nama}\nrange 1:4\n{nama[1:4]}\nrange :3\n{nama[:3]}')
 
 print('\nc. Mengubah nilai list dengan range 2:3 (nilai bisa di sesuaikan')
-nama[2:3] = ['udin', 'asep']
+nama[2:3] = ['samsul', 'reno']
 print(nama)
 
 print('\nd. Penambahan elemen list denga perintah append, insert, dan extend')
-nama.append('gabitch')
+nama.append('paijo')
 print(f'Penambahan dengan append -> {nama}')
-nama.insert(0, 'evitri')
+nama.insert(0, 'trigger')
 print(f'Penambahan dengan insert -> {nama}')
-nama_baru = ['asri', 'lastri', 'edy']
+nama_baru = ['banu', 'setyo', 'nisa']
 nama.extend(nama_baru)
 print(f'Penambahan dengan extend -> {nama}')
 
 print('\ne. Penghapusan elemen list dengan perintah remove, pop, del')
 print(f'dengan perintah remove')
-nama.remove("rimba")
+nama.remove("rik")
 print(nama)
 print(f'dengan perintah pop')
 nama.pop(1)

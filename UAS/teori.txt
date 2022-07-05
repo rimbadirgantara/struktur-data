@@ -1,0 +1,23 @@
+teori
+sorting adala proses pengurutan data baik dari nilai tertinggi maupun dari nilai terendah.
+
+Bubble Sort adalah metode pengurutan algoritma dengan cara melakukan penukaran data secara terus menerus sampai bisa dipastikan dalam suatu iterasi tertentu tidak ada lagi perubahan/penukaran. Algoritma ini menggunakan perbandingan dalam operasi antar elemennya.
+
+Selection sort merupakan teknik sorting yang paling sederhana, hal pertama yang akan dilakukan algoritma selection sort adalah menemukan elemen terkecil dalam array kita dan menukarnya (swap) dengan elemen yang ada di posisi pertama, kemudian algoritma ini akan mengulangi hal yang sama lagi yaitu mencari elemen terkecil yang ada di dalam array dan kemudian menukarnya (swap) dengan elemen yang ada di posisi kedua (mengingat elemen di posisi pertama sudah berhasil kita sorting). Proses ini akan terus berlanjut sampai semua elemen yang ada di dalam array telah berhasil kita sorting.
+
+Insertion Sort adalah algoritma pengurutan yang cara kerjanya adalah dengan mengambil elemen pada array, kemudian menyisipkan data tersebut pada posisi yang tepat. Algoritma ini membandingkan 2 elemen yaitu elemen pertama dengan elemen yang sudah diurutkan. Perbandingan akan terus dilakukan hingga tidak ada elemen yang tersisa.
+
+Merge sort merupakan pengurutan secara menggabungkan suatu data.                                                
+
+search
+sequentional search 
+Sequential Searching merupakan teknik pencarian data dengan cara masukan berupa sebuah kata kunci lalu mulai dari awal (atau dari akhir) cek seluruh record dalam array atau list, dengan membaca satu persatu berdasarkan key yang dicari, apabila sampai akhir pengulangan data tidak ada yang sama maka data tidak ditemukan.
+
+binary search
+Binary search adalah algoritma pencarian untuk data yang terurut. Pencarian dilakukan dengan cara menebak apakah data yang dicari berada ditengah-tengah data, kemudian membandingkan data yang dicari dengan data yang ada ditengah. Bila data yang ditengah sama dengan data yang dicari, berarti data ditemukan.
+
+intepolation search
+Proses pencarian dengan menggunakan metode Interpolation Search adalah dengan cara menebak (guess) posisi kata yang dicari dengan menggunakan rumus tertentu. Pencarian interpolasi hanya dapat dilakukan pada barisan bilangan yang telah diurutkan baik secara menaik (ascending) maupun menurun (descending).
+
+fibonacci search
+algoritma pencarian bilangan fibonacci pada array

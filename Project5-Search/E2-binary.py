@@ -1,3 +1,7 @@
+from os import system as sy
+sy('cls')
+
+
 def binary_search(item_list, item):
     first = 0
     last = len(item_list) - 1
@@ -14,5 +18,5 @@ def binary_search(item_list, item):
     return found
 
 
-print(binary_search([1, 2, 3, 5, 8], 6))
-print(binary_search([1, 2, 3, 5, 8], 5))
+a = int(input('Search ? '))
+print(binary_search([1, 2, 3, 5, 8], a))

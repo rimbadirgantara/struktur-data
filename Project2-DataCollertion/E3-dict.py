@@ -1,11 +1,9 @@
-from os import system as sy
-sy('cls')
 bio = {
-    "nama": "Rimba Dirgantara",
+    "nama": "Muhammad Viekri Alfarisi",
     "umur": 19,
-    "tempat_tinggal": "Rusun",
-    "status": "singel yang ganss",
-    "tinggi": 175.9
+    "tempat_tinggal": "Bengkalis",
+    "status": "Pacaran",
+    "tinggi": 180.2
 }
 
 print('a. Menampilkan semua item dengan perintah loop')
@@ -35,9 +33,9 @@ def t_item(var, key, value):
     return var[key]
 
 
-t_item(bio, "rekor_dunia", "ngehek nasa")
+t_item(bio, "hoby", "poly")
 print(f'1.{bio}')
-t_item(bio, "meretas", "online.sim.polbeng")
+t_item(bio, "makanan", "sate")
 print(f'2.{bio}')
 
 print('\nPengubah item dengan perintah pop (1 item), popitem (1 popitem)')
@@ -52,11 +50,11 @@ mirr_bio = bio.copy()
 print(mirr_bio)
 
 print('\nF. Nested dict')
-fck_dict = {
+new_dict = {
     'pertama': bio,
     'kedua': {
-        'situs_terhek': 'online.sim.polbeng',
-        'hacking_tool': 'nmap'
+        'hoby': 'poly',
+        'makanan': 'sate'
     },
     'ketiga': {
         'angka': [1, 2, 3, 4, 5]
@@ -65,9 +63,9 @@ fck_dict = {
 
 
 def loop_dict(var):
-    for i, a in fck_dict.items():
-        v = (i, fck_dict[i])
+    for i, a in new_dict.items():
+        v = (i, new_dict[i])
         print(v)
 
 
-loop_dict(fck_dict)
+loop_dict(new_dict)
