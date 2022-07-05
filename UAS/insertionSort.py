@@ -4,8 +4,8 @@ sy('cls')
 
 def iSort(a):
     for i in range(1, len(a)):
-        value = a[i]
-        index = i - 1
+        value = a[i]  # 2
+        index = i - 1  # 1
         while index >= 0 and value < a[index]:
             a[index + 1] = a[index]
             index -= 1
